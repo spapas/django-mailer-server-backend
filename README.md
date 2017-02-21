@@ -10,7 +10,7 @@ Use the following conf:
 ```
 MAILER_SERVER_TOKEN = 'YOUR_MAILER_SERVER_TOKEN'
 MAILER_SERVER_URL = 'http://MAILER_SERVER_URL/mail/api/send_mail/'
-EMAIL_BACKEND = 'core.mailer_email_backend.MailerServerBackend'
+EMAIL_BACKEND = 'mailer_email_backend.MailerServerBackend'
 
 ```
 
