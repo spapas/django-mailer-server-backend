@@ -1,5 +1,5 @@
 # django-mailer-server-backend
-A django mail backend for mailer server
+A django mail backend for mailer server (`https://github.com/spapas/mailer_server`)
 
 Install it from git for now:
 
