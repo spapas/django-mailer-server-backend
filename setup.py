@@ -8,5 +8,5 @@ setup(name='mailer_server_backend',
       author='Serafeim Papastefanos',
       author_email='spapas@gmail.com',
       url='https://github.com/spapas/django-mailer-server-backend',
-      packages=['mailer_server_backends'],
+      packages=['mailer_server_backend'],
      )
