@@ -13,10 +13,11 @@ or the latest version from git:
 
 Then use the following conf in your django app:
 
-```
-MAILER_SERVER_TOKEN = 'YOUR_MAILER_SERVER_TOKEN'
-MAILER_SERVER_URL = 'http://MAILER_SERVER_URL/mail/api/send_mail/'
-EMAIL_BACKEND = 'mailer_email_backend.MailerServerBackend'
-```
+
+.. code-block:: python
+
+    MAILER_SERVER_TOKEN = 'YOUR_MAILER_SERVER_TOKEN'
+    MAILER_SERVER_URL = 'http://MAILER_SERVER_URL/mail/api/send_mail/'
+    EMAIL_BACKEND = 'mailer_email_backend.MailerServerBackend'
 
 
