@@ -13,7 +13,7 @@ setup(
     author='Serafeim Papastefanos',
     author_email='spapas@gmail.com',
     license='MIT',
-    url='https://github.com/spapas/mailer_server',
+    url='https://github.com/spapas/django-mailer-server-backend',
     zip_safe=False,
     include_package_data=True,
     packages=find_packages(exclude=['tests.*', 'tests',]),
