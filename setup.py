@@ -7,7 +7,7 @@ def readme():
 
 setup(
     name='django-mailer-server-backend',
-    version='0.1.3',
+    version='0.1.4',
     description="A django mail backend for mailer server (https://github.com/spapas/mailer_server)",
     long_description=readme(),
     author='Serafeim Papastefanos',
