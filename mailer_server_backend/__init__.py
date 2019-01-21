@@ -31,7 +31,7 @@ class MailerServerBackend(BaseEmailBackend):
             req.add_header('Content-Type', 'application/json')
             req.add_header('Authorization', 'Token {0}'.format(settings.MAILER_SERVER_TOKEN))
             try:
-                resp = urlopen(req, data).encode('utf-8')
+                resp = urlopen(req, data.encode('utf-8'))
             except TypeError:
                 resp = urlopen(req, data)
 
