@@ -1,7 +1,12 @@
 from django.core.mail.backends.base import BaseEmailBackend
 from django.conf import settings
-import json, urllib2
-
+import json
+try:
+    # For Python 3.0 and later
+    from urllib.request import urlopen, Request
+except ImportError:
+    # Fall back to Python 2's urllib2
+    from urllib2 import urlopen, Request
 
 def get_dict_from_message(em):
     d = {}
@@ -22,10 +27,10 @@ class MailerServerBackend(BaseEmailBackend):
         for em in email_messages:
             emd = get_dict_from_message(em)
             data = json.dumps(emd)
-            req = urllib2.Request(settings.MAILER_SERVER_URL)
+            req = Request(settings.MAILER_SERVER_URL)
             req.add_header('Content-Type', 'application/json')
             req.add_header('Authorization', 'Token {0}'.format(settings.MAILER_SERVER_TOKEN))
-            resp = urllib2.urlopen(req, data)
+            resp = urlopen(req, data)
             content = resp.read()
             if resp.code == 200:
                 send_count+=1
