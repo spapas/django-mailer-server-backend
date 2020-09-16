@@ -21,3 +21,6 @@ Then use the following conf in your django app:
     EMAIL_BACKEND = 'mailer_email_backend.MailerServerBackend'
 
 
+### Changelog
+
+* v. 0.3.0: Add support for file attachments (works only with python 3.x)
