@@ -23,4 +23,4 @@ Then use the following conf in your django app:
 
 ### Changelog
 
-* v. 0.3.0: Add support for file attachments (works only with python 3.x)
+* v.0.3.0: Add support for file attachments (works only with python 3.x)
